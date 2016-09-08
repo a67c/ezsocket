@@ -1,0 +1,26 @@
+extends layout
+block content
+  .col-md-12.j_chatwrap
+    .panel.panel-inverse
+      .panel-heading
+        .panel-heading-btn
+        h4.panel-title 聊天信息
+      .panel-body.chat-flex
+        .ch-left
+          ul.ch-left-ul#j_crl_list
+        .ch-right
+          .ch-right-top
+            ul.right-top-ul
+          
+          #j_face
+          #j_chatcondition.ch-right-middle
+            a(href='#')
+              form#sendPicform(type='post' enctype='multipart/form-data' name='test')
+                input#j_sendmsg(type='file', name='fileField')
+              i.fa.fa-image(data-class='fa-image')
+          .ch-right-bottom
+            .chbt-text
+              div#j_msgtext(contenteditable='true')
+            .chbt-btn
+              button#j_mesbtn 发送
+

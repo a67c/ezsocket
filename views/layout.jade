@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='/stylesheets/font-awesome-4.1.0/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/mychat.css')
+  body
+    block content
+    .float-player
+    .dialog
+      #j_floatdel.add-group
+        input.j_nametext(type="text" placeholder="请输入您的名字")
+        input.j_btn(type="button" value="确定")
+    script(src='/javascripts/jquery-2.0.3.min.js')
+    script(src='/javascripts/socket.io.js')
+    script(src='/javascripts/apps.js')
+
